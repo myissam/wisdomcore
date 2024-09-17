@@ -1,0 +1,164 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <title>Blog</title><!-- HEAD_svelte-1pww12a_START --><link rel="shortcut icon" type="image/jpg" sizes="32x32" href="https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"><link rel="preconnect" href="https://fonts.bunny.net"><link href="https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900" rel="stylesheet"><link href="https://fonts.bunny.net/css?family=merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css"><script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace-autoloader.js"></script><link rel="shortcut icon" type="image/jpg" sizes="32x32" href="https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"><meta name="description" content=""><style>/* Reset & standardize default styles */
+@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css") layer;
+
+/* Design tokens (apply to components) */
+:root {
+  /* Custom theme options */
+  --color-accent: black;
+  --color-accent2: #999999;
+  --color-shade: #2d3339;
+
+  --inner-max-width: 800px;
+
+  /* Base values */
+  --box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  --border-radius: 2px;
+  --border-color: #e0e1e1;
+  --body-font: "Merriweather", serif;
+  --heading-font: "Inter", sans-serif;
+}
+
+/* Root element (use instead of `body`) */
+#page {
+  font-family: var(--heading-font);
+  color: #111;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  background: white;
+}
+
+/* Elements */
+.section-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+a.link {
+  line-height: 1.3;
+  border-bottom: 2px solid var(--color-accent);
+  transform: translateY(-2px); /* move link back into place */
+  transition: var(--transition, 0.1s border);
+}
+
+a.link:hover {
+    border-color: transparent;
+  }
+
+.heading {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.15rem;
+}
+
+.button {
+  color: white;
+  background: var(--color-accent, rebeccapurple);
+  border-radius: 0;
+  padding: 1px 24px;
+  transition: var(--transition, 0.1s box-shadow);
+  border: 0; /* reset */
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.button:hover {
+    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);
+  }
+
+.button.inverted {
+    background: transparent;
+    color: var(--color-accent, rebeccapurple);
+  }
+
+</style><!-- HEAD_svelte-1pww12a_END -->
+      <style>.section-container.svelte-ngjace.svelte-ngjace{display:flex;justify-content:space-between;align-items:center;padding-block:2rem}.logo.svelte-ngjace.svelte-ngjace{font-size:1.5rem;font-weight:600;line-height:1.2}.desktop-nav.svelte-ngjace.svelte-ngjace{display:none;align-items:center;justify-content:space-between;width:100%}.desktop-nav.svelte-ngjace nav.svelte-ngjace{display:flex;gap:1.75rem}.desktop-nav.svelte-ngjace nav a.link.svelte-ngjace{border-color:transparent;transition:border-color 0.1s;font-size:0.95rem;font-weight:500}.desktop-nav.svelte-ngjace nav a.link.svelte-ngjace:hover,.desktop-nav.svelte-ngjace nav a.link .active.svelte-ngjace{border-color:initial}@media(min-width: 800px){.desktop-nav.svelte-ngjace.svelte-ngjace{display:flex
+}}.mobile-nav.svelte-ngjace.svelte-ngjace{display:flex;align-items:center;justify-content:space-between;width:100%;font-weight:500}@media(min-width: 800px){.mobile-nav.svelte-ngjace.svelte-ngjace{display:none
+}}#popup.svelte-ngjace.svelte-ngjace{font-size:1.25rem;display:grid;gap:1rem;position:absolute;text-align:center;background-color:var(--background-color, white);box-shadow:var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));border-radius:var(--border-radius);inset:0.5rem;bottom:initial;padding:2rem;z-index:1}#popup.svelte-ngjace button#close.svelte-ngjace{position:absolute;right:1rem;top:1rem}
+.svelte-16pn5km.svelte-16pn5km{position:relative;z-index:1}.section-container.svelte-16pn5km.svelte-16pn5km{display:grid;gap:3.5rem;max-width:var(--inner-max-width);padding-block:5rem;position:relative}.headline.svelte-16pn5km.svelte-16pn5km{max-width:800px;margin:0 auto;font-size:clamp(2rem, 10vw, 5rem);line-height:1;letter-spacing:-0.04rem;font-weight:700;text-align:center;text-wrap:balance}form.svelte-16pn5km.svelte-16pn5km{display:flex;flex-wrap:wrap;gap:0.3rem;max-width:400px;justify-self:center}form.svelte-16pn5km label.svelte-16pn5km{flex:1}form.svelte-16pn5km label input.svelte-16pn5km{width:100%;padding:0.6rem 0.75rem;outline-color:transparent;transition:0.1s outline-color;border:1.5px solid var(--border-color, #eee);font-weight:300;border-radius:0.25rem}form.svelte-16pn5km label input.svelte-16pn5km:focus{outline-color:var(--color-accent, rebeccapurple)}.message.svelte-16pn5km.svelte-16pn5km{text-align:center;background:var(--background, white);padding:1rem;box-shadow:1px 1px 10px 5px rgba(0, 0, 0, 0.1);border-radius:0.25rem}.message.error.svelte-16pn5km.svelte-16pn5km{border:2px solid red}.graphic.svelte-16pn5km.svelte-16pn5km{position:absolute;z-index:0}.graphic.left.svelte-16pn5km.svelte-16pn5km{width:20%;bottom:20%;right:95%;-webkit-animation:svelte-16pn5km-left-float 8s infinite alternate;animation:svelte-16pn5km-left-float 8s infinite alternate}.graphic.right.svelte-16pn5km.svelte-16pn5km{width:20%;bottom:70%;left:90%;-webkit-animation:svelte-16pn5km-right-float 8s infinite alternate;animation:svelte-16pn5km-right-float 8s infinite alternate}@media(prefers-reduced-motion){.graphic.svelte-16pn5km.svelte-16pn5km{-webkit-animation:none;animation:none
+}}@-webkit-keyframes svelte-16pn5km-left-float{to{rotate:5deg;transform:translateX(20px)}}@keyframes svelte-16pn5km-left-float{to{rotate:5deg;transform:translateX(20px)}}@-webkit-keyframes svelte-16pn5km-right-float{to{rotate:-20deg;transform:translateX(-20px)}}@keyframes svelte-16pn5km-right-float{to{rotate:-20deg;transform:translateX(-20px)}}
+section.svelte-tioxrd.svelte-tioxrd{background:var(--color-brand);overflow:hidden}section.image-left.svelte-tioxrd figure.svelte-tioxrd{grid-column:1;grid-row:1}section.image-left.svelte-tioxrd .body.svelte-tioxrd{grid-column:2}.section-container.svelte-tioxrd.svelte-tioxrd{display:flex;flex-direction:column-reverse;gap:2rem}@media(min-width: 800px){.section-container.svelte-tioxrd.svelte-tioxrd{display:grid;grid-template-columns:1fr 1fr;place-items:center;gap:6rem;padding-block:6rem
+}}.body.svelte-tioxrd.svelte-tioxrd{color:var(--color-inverted);display:grid;place-items:start;padding-top:2rem}.body.svelte-tioxrd .headline.svelte-tioxrd{color:var(--color-heading);font-family:var(--font-heading);font-weight:700;font-size:clamp(2.75rem, 10vw, 3rem);line-height:1.1;margin-bottom:1.5rem}.body.svelte-tioxrd .subheading.svelte-tioxrd{font-weight:400;font-size:1.125rem;margin-bottom:2rem}.body.svelte-tioxrd .button.svelte-tioxrd{font-weight:500}figure.svelte-tioxrd.svelte-tioxrd{position:relative}figure.svelte-tioxrd img.svelte-tioxrd{border-radius:var(--border-radius);z-index:1;position:relative}
+.section-container.svelte-10jylfj.svelte-10jylfj{max-width:var(--inner-max-width, 900px)}h2.svelte-10jylfj.svelte-10jylfj{font-size:1rem;line-height:1.1;font-weight:600;margin-bottom:4rem;letter-spacing:-0.02rem;padding:.5rem 0;border-bottom:1px solid #f0f0f0}ul.items.svelte-10jylfj.svelte-10jylfj{display:grid;gap:4rem}li.svelte-10jylfj.svelte-10jylfj{display:grid;gap:2rem}li.svelte-10jylfj .post-info .title.svelte-10jylfj{display:block;font-size:1.3rem;font-weight:600;margin-bottom:0.75rem;line-height:1.2;letter-spacing:-0.02rem;-webkit-text-decoration:underline transparent;text-decoration:underline transparent;transition:0.1s -webkit-text-decoration;transition:0.1s text-decoration;transition:0.1s text-decoration, 0.1s -webkit-text-decoration}li.svelte-10jylfj .post-info .title.svelte-10jylfj:hover{-webkit-text-decoration-color:initial;text-decoration-color:initial}li.svelte-10jylfj .post-info .description.svelte-10jylfj{font-size:1rem;margin-bottom:0.5rem;font-family:var(--body-font);line-height:1.4;font-weight:300;color:#2d3339}li.svelte-10jylfj .post-info .date.svelte-10jylfj{font-size:1rem;font-weight:400;color:var(--color-accent2);font-weight:400}li.svelte-10jylfj img.svelte-10jylfj{box-shadow:var(--box-shadow);border-radius:var(--border-radius)}@media(min-width: 600px){li.svelte-10jylfj.svelte-10jylfj{grid-template-columns:3fr 1fr;gap:3rem}}
+.section-container.svelte-1excgdw.svelte-1excgdw{padding:2rem 2rem 1rem 2rem}hr.svelte-1excgdw.svelte-1excgdw{border-color:#F2F2F2}.footer.svelte-1excgdw.svelte-1excgdw{display:flex;justify-content:space-between;flex-direction:start column;gap:1rem;padding-top:1rem;padding-bottom:1rem}.copyright.svelte-1excgdw.svelte-1excgdw{font-size:0.75rem;color:var(--color-text-secondary, #2D3339)}.primo.svelte-1excgdw.svelte-1excgdw{font-weight:600;font-size:0.75rem}.primo.svelte-1excgdw a.svelte-1excgdw{text-decoration:underline}ul.svelte-1excgdw.svelte-1excgdw{display:flex;gap:1.5rem;font-size:1.5rem;list-style:none}ul.svelte-1excgdw a.svelte-1excgdw{transition:var(--transition)}ul.svelte-1excgdw a.svelte-1excgdw:hover{color:var(--color-accent)}@media(min-width: 600px){ul.svelte-1excgdw.svelte-1excgdw{font-size:1.25rem}}</style>
+    </head>
+    <body id="page">
+       
+<div class="section" id="section-6f1c2869"><header class="section-container svelte-ngjace"><div class="desktop-nav svelte-ngjace"><a href="/" class="logo svelte-ngjace">The Wisdom Core</a>
+    <nav class="svelte-ngjace"><a class="link svelte-ngjace" href="/">Home</a><a class="link svelte-ngjace" href="/blog">Blog</a><a class="link svelte-ngjace" href="/about">About</a></nav></div>
+  <div class="mobile-nav svelte-ngjace"><a href="/" class="logo svelte-ngjace">The Wisdom Core</a>
+    <button id="open" aria-label="Open mobile navigation"></button>
+    </div></header></div> 
+<div class="section svelte-16pn5km" id="section-f9cf83fe"><section class="section-container svelte-16pn5km"><h1 class="headline svelte-16pn5km">The purpose of wisdom is not to criticize you, but to bring out the best in you.</h1>
+  <form class="svelte-16pn5km"><label class="svelte-16pn5km"><input required name="email" type="text" placeholder="Email address" class="svelte-16pn5km"></label>
+      <button class="button svelte-16pn5km" type="submit">Subscribe</button></form>
+  <img class="graphic left svelte-16pn5km" src="https://vnshpzknqmdfibnnthhl.supabase.co/storage/v1/object/public/images/ddd82512-b988-42e7-865a-02d05bb753f4/1726583120394dribbble.gif" alt="feather">
+  <img class="graphic right svelte-16pn5km" src="https://vnshpzknqmdfibnnthhl.supabase.co/storage/v1/object/public/images/ddd82512-b988-42e7-865a-02d05bb753f4/1726583581451loving.png" alt="satellite"></section></div> 
+<div class="section" id="section-fb70c6b1"><section class="svelte-tioxrd"><div class="section-container svelte-tioxrd"><div class="body svelte-tioxrd"><h1 class="headline svelte-tioxrd">From Materialism to the Mystery of the Soul</h1>
+      <div class="subheading svelte-tioxrd">A first ray delving into the boundaries of the body, mind, and emotions reveals the soul as the ultimate essence of human existence.</div>
+      <a href="/" class="button svelte-tioxrd">Read more</a></div>
+    <figure class="svelte-tioxrd"><img src="https://vnshpzknqmdfibnnthhl.supabase.co/storage/v1/object/public/images/ddd82512-b988-42e7-865a-02d05bb753f4/1726584609510download(3).jpg" alt="" class="svelte-tioxrd"></figure></div></section></div> 
+<div class="section" id="section-17ec1d0b"><section class="section-container svelte-10jylfj"><h2 class="svelte-10jylfj">Articles</h2>
+  <ul class="items svelte-10jylfj"><li class="svelte-10jylfj"><div class="post-info"><a class="title svelte-10jylfj" href="/blog/article">From Materialism to the Mystery of the Soul</a>
+          <div class="description svelte-10jylfj"><!-- HTML_TAG_START --><p>A first ray delving into the boundaries of the body, mind, and emotions reveals the soul as the ultimate essence of human existence.</p><!-- HTML_TAG_END --></div>
+          <span class="date svelte-10jylfj">09/09/2024</span></div>
+        <img data-key="items[0].thumbnail" src="https://vnshpzknqmdfibnnthhl.supabase.co/storage/v1/object/public/images/ddd82512-b988-42e7-865a-02d05bb753f4/1726584609510download(3).jpg" alt="" class="svelte-10jylfj">
+      </li><li class="svelte-10jylfj"><div class="post-info"><a class="title svelte-10jylfj" href="/blog/second-article">The Soul’s Journey</a>
+          <div class="description svelte-10jylfj"><!-- HTML_TAG_START --><p>Perspectives from Ghazali, Rumi, and the Christian Concept of "Son of God"</p><!-- HTML_TAG_END --></div>
+          <span class="date svelte-10jylfj">10/09/2024</span></div>
+        <img data-key="items[1].thumbnail" src="https://vnshpzknqmdfibnnthhl.supabase.co/storage/v1/object/public/images/ddd82512-b988-42e7-865a-02d05bb753f4/1726584844575download(4).jpg" alt="" class="svelte-10jylfj">
+      </li></ul></section></div> 
+<div class="section" id="section-0fc92149"><footer><div class="section-container svelte-1excgdw"><hr class="svelte-1excgdw">
+    <div class="footer svelte-1excgdw"><span class="copyright svelte-1excgdw">Copyright 2024</span>
+      <span class="primo svelte-1excgdw"><a href="https://primo.so" class="svelte-1excgdw">Primo</a> Powered </span>
+      <ul class="svelte-1excgdw"><li><a href="https://x.com" aria-label="mdi:X" class="svelte-1excgdw"></a>
+        </li><li><a href="https://pinterest.com" aria-label="mdi:pinterest" class="svelte-1excgdw"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M9.04 21.54c.96.29 1.93.46 2.96.46a10 10 0 0 0 10-10A10 10 0 0 0 12 2A10 10 0 0 0 2 12c0 4.25 2.67 7.9 6.44 9.34c-.09-.78-.18-2.07 0-2.96l1.15-4.94s-.29-.58-.29-1.5c0-1.38.86-2.41 1.84-2.41c.86 0 1.26.63 1.26 1.44c0 .86-.57 2.09-.86 3.27c-.17.98.52 1.84 1.52 1.84c1.78 0 3.16-1.9 3.16-4.58c0-2.4-1.72-4.04-4.19-4.04c-2.82 0-4.48 2.1-4.48 4.31c0 .86.28 1.73.74 2.3c.09.06.09.14.06.29l-.29 1.09c0 .17-.11.23-.28.11c-1.28-.56-2.02-2.38-2.02-3.85c0-3.16 2.24-6.03 6.56-6.03c3.44 0 6.12 2.47 6.12 5.75c0 3.44-2.13 6.2-5.18 6.2c-.97 0-1.92-.52-2.26-1.13l-.67 2.37c-.23.86-.86 2.01-1.29 2.7z"/><!-- HTML_TAG_END --></svg></a>
+        </li></ul></div></div></footer></div> 
+
+      <script type="module">
+      import('/_symbols/d8831946-4b11-474b-aa64-17f719ce2577.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-6f1c2869'),
+              hydrate: true,
+              props: {"logo":{"title":"The Wisdom Core","image":{"url":"https://www.wisdomcore.net","alt":""}},"site_nav":[{"link":{"url":"/","label":"Home"}},{"link":{"url":"/blog","label":"Blog"}},{"link":{"url":"/about","label":"About"}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/378c025f-c3c5-4576-88bc-7dc1e3cc677c.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-f9cf83fe'),
+              hydrate: true,
+              props: {"heading":"The purpose of wisdom is not to criticize you, but to bring out the best in you.","form":{"endpoint":"https://formsubmit.co/myissam07@gmail.com","placeholder":"Email address","button_label":"Subscribe","success_message":"Thanks for signing up! I promise not to spam you :)","error_message":"Uh oh, something wen't wrong."},"graphics":{"left":{"url":"https://vnshpzknqmdfibnnthhl.supabase.co/storage/v1/object/public/images/ddd82512-b988-42e7-865a-02d05bb753f4/1726583120394dribbble.gif","alt":"feather"},"right":{"url":"https://vnshpzknqmdfibnnthhl.supabase.co/storage/v1/object/public/images/ddd82512-b988-42e7-865a-02d05bb753f4/1726583581451loving.png","alt":"satellite"}}}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/a125ab0e-1776-4c28-ac41-6272339f2891.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-0fc92149'),
+              hydrate: true,
+              props: {"heading":"","email":"","social_links":[{"icon":"mdi:X","link":{"url":"https://x.com","label":"X","active":false}},{"icon":"mdi:pinterest","link":{"url":"https://pinterest.com","label":"Pinterest","active":false}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    </script>
+    </body>
+  </html>
+  
