@@ -3061,7 +3061,7 @@ function create_if_block_5(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div, "class", "message error svelte-16pn5km");
+			attr(div, "class", "message error svelte-1x5mqcl");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -3106,7 +3106,7 @@ function create_if_block_4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div, "class", "message svelte-16pn5km");
+			attr(div, "class", "message svelte-1x5mqcl");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -3191,11 +3191,11 @@ function create_if_block_2(ctx) {
 			attr(input, "name", "email");
 			attr(input, "type", "text");
 			attr(input, "placeholder", input_placeholder_value = /*form*/ ctx[0].placeholder);
-			attr(input, "class", "svelte-16pn5km");
-			attr(label, "class", "svelte-16pn5km");
-			attr(button, "class", "button svelte-16pn5km");
+			attr(input, "class", "svelte-1x5mqcl");
+			attr(label, "class", "svelte-1x5mqcl");
+			attr(button, "class", "button svelte-1x5mqcl");
 			attr(button, "type", "submit");
-			attr(form_1, "class", "svelte-16pn5km");
+			attr(form_1, "class", "svelte-1x5mqcl");
 		},
 		m(target, anchor) {
 			insert_hydration(target, form_1, anchor);
@@ -3335,7 +3335,7 @@ function create_if_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "class", "graphic left svelte-16pn5km");
+			attr(img, "class", "graphic left svelte-1x5mqcl");
 			if (!src_url_equal(img.src, img_src_value = /*graphics*/ ctx[2].left.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*graphics*/ ctx[2].left.alt);
 		},
@@ -3373,7 +3373,7 @@ function create_if_block(ctx) {
 			this.h();
 		},
 		h() {
-			attr(img, "class", "graphic right svelte-16pn5km");
+			attr(img, "class", "graphic right svelte-1x5mqcl");
 			if (!src_url_equal(img.src, img_src_value = /*graphics*/ ctx[2].right.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*graphics*/ ctx[2].right.alt);
 		},
@@ -3452,8 +3452,8 @@ function create_fragment(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h1, "class", "headline svelte-16pn5km");
-			attr(section, "class", "section-container svelte-16pn5km");
+			attr(h1, "class", "headline svelte-1x5mqcl");
+			attr(section, "class", "section-container svelte-1x5mqcl");
 		},
 		m(target, anchor) {
 			insert_hydration(target, section, anchor);
