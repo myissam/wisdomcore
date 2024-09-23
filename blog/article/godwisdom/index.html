@@ -1,0 +1,163 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <title>Article</title><!-- HEAD_svelte-1pww12a_START --><link rel="shortcut icon" type="image/jpg" sizes="32x32" href="https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"><link rel="preconnect" href="https://fonts.bunny.net"><link href="https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900" rel="stylesheet"><link href="https://fonts.bunny.net/css?family=merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css"><script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace-autoloader.js"></script><link rel="shortcut icon" type="image/jpg" sizes="32x32" href="https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"><meta name="description" content="This is an article discussing the merits of something or another."><meta property="og:image" content="https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2370&amp;q=80">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1577717707588-58e49821e851?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2370&amp;q=80"><style>/* Reset & standardize default styles */
+@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css") layer;
+
+/* Design tokens (apply to components) */
+:root {
+  /* Custom theme options */
+  --color-accent: black;
+  --color-accent2: #999999;
+  --color-shade: #2d3339;
+
+  --inner-max-width: 800px;
+
+  /* Base values */
+  --box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  --border-radius: 2px;
+  --border-color: #e0e1e1;
+  --body-font: "Merriweather", serif;
+  --heading-font: "Inter", sans-serif;
+}
+
+/* Root element (use instead of `body`) */
+#page {
+  font-family: var(--heading-font);
+  color: #111;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  background: white;
+}
+
+/* Elements */
+.section-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+a.link {
+  line-height: 1.3;
+  border-bottom: 2px solid var(--color-accent);
+  transform: translateY(-2px); /* move link back into place */
+  transition: var(--transition, 0.1s border);
+}
+
+a.link:hover {
+    border-color: transparent;
+  }
+
+.heading {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.15rem;
+}
+
+.button {
+  color: white;
+  background: var(--color-accent, rebeccapurple);
+  border-radius: 0;
+  padding: 1px 24px;
+  transition: var(--transition, 0.1s box-shadow);
+  border: 0; /* reset */
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.button:hover {
+    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);
+  }
+
+.button.inverted {
+    background: transparent;
+    color: var(--color-accent, rebeccapurple);
+  }
+
+</style><!-- HEAD_svelte-1pww12a_END -->
+      <style>.section-container.svelte-fl9zvv.svelte-fl9zvv{display:flex;justify-content:space-between;align-items:center;padding-block:2rem}.logo.svelte-fl9zvv.svelte-fl9zvv{display:flex;align-items:center}.desktop-nav.svelte-fl9zvv.svelte-fl9zvv{display:none;align-items:center;justify-content:space-between;width:100%}.desktop-nav.svelte-fl9zvv nav.svelte-fl9zvv{display:flex;gap:1.75rem}.desktop-nav.svelte-fl9zvv nav a.link.svelte-fl9zvv{border-color:transparent;transition:border-color 0.1s;font-size:0.95rem;font-weight:500}.desktop-nav.svelte-fl9zvv nav a.link.svelte-fl9zvv:hover,.desktop-nav.svelte-fl9zvv nav a.link .active.svelte-fl9zvv{border-color:initial}@media(min-width: 600px){.desktop-nav.svelte-fl9zvv.svelte-fl9zvv{display:flex
+}}.mobile-nav.svelte-fl9zvv.svelte-fl9zvv{display:flex;align-items:center;justify-content:space-between;width:100%;font-weight:500}@media(min-width: 300px){.mobile-nav.svelte-fl9zvv.svelte-fl9zvv{display:none
+}}#popup.svelte-fl9zvv.svelte-fl9zvv{font-size:1.25rem;display:grid;gap:1rem;position:absolute;text-align:center;background-color:var(--background-color, white);box-shadow:var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));border-radius:var(--border-radius);inset:0.5rem;bottom:initial;padding:2rem;z-index:1}#popup.svelte-fl9zvv button#close.svelte-fl9zvv{position:absolute;right:1rem;top:1rem}
+.section-container.svelte-5xb75x{display:grid;place-items:center;padding:2rem 2rem 1rem 2rem}.superhead.svelte-5xb75x{font-size:1rem;color:var(--color-accent2);font-weight:500;margin-bottom:0.5rem}.heading.svelte-5xb75x{margin-bottom:2rem}@media(min-width:700px){img.svelte-5xb75x{max-width:300px}}
+.section-container.svelte-1lugy4n{max-width:var(--inner-max-width,800px);padding:2rem}.content.svelte-1lugy4n img{width:100%;margin:2rem 0;box-shadow:var(--box-shadow);border-radius:var(--border-radius)}.content.svelte-1lugy4n p{padding:0.25rem 0;line-height:1.5;font-family:var(--body-font);font-weight:300;margin-bottom:1rem;color:#2d3339}.content.svelte-1lugy4n a{text-decoration:underline}.content.svelte-1lugy4n h1{font-size:clamp(1.75rem, 10vw, 2.25rem);font-weight:600;letter-spacing:-0.08rem;margin-bottom:1rem;line-height:1.1}.content.svelte-1lugy4n h2{font-size:clamp(1.5rem, 10vw, 2.125rem);font-weight:600;margin-bottom:1rem;letter-spacing:-0.06rem;line-height:1.1}.content.svelte-1lugy4n h3{font-size:clamp(1.25rem, 10vw, 1.75rem);font-weight:600;margin-bottom:0.5rem;letter-spacing:-0.05rem;line-height:1.1}.content.svelte-1lugy4n ul{list-style:disc;padding:0.25rem 0;padding-left:1.25rem}.content.svelte-1lugy4n ol{list-style:decimal;padding-left:1.25rem;margin-bottom:2rem}.content.svelte-1lugy4n blockquote{padding:2rem;box-shadow:var(--box-shadow);border-radius:var(--border-radius)}
+.section-container.svelte-1excgdw.svelte-1excgdw{padding:2rem 2rem 1rem 2rem}hr.svelte-1excgdw.svelte-1excgdw{border-color:#F2F2F2}.footer.svelte-1excgdw.svelte-1excgdw{display:flex;justify-content:space-between;flex-direction:start column;gap:1rem;padding-top:1rem;padding-bottom:1rem}.copyright.svelte-1excgdw.svelte-1excgdw{font-size:0.75rem;color:var(--color-text-secondary, #2D3339)}.primo.svelte-1excgdw.svelte-1excgdw{font-weight:600;font-size:0.75rem}.primo.svelte-1excgdw a.svelte-1excgdw{text-decoration:underline}ul.svelte-1excgdw.svelte-1excgdw{display:flex;gap:1.5rem;font-size:1.5rem;list-style:none}ul.svelte-1excgdw a.svelte-1excgdw{transition:var(--transition)}ul.svelte-1excgdw a.svelte-1excgdw:hover{color:var(--color-accent)}@media(min-width: 600px){ul.svelte-1excgdw.svelte-1excgdw{font-size:1.25rem}}</style>
+    </head>
+    <body id="page">
+       
+<div class="section" id="section-1a1b7ee4"><header class="section-container svelte-fl9zvv"><div class="desktop-nav svelte-fl9zvv"><a href="/" class="logo svelte-fl9zvv">corta</a>
+    <nav class="svelte-fl9zvv"><a class="link svelte-fl9zvv" href="/">Home</a><a class="link svelte-fl9zvv" href="/blog">Blog</a><a class="link svelte-fl9zvv" href="/about">About</a><a class="link svelte-fl9zvv" href=""></a></nav></div>
+  <div class="mobile-nav svelte-fl9zvv"><a href="/" class="logo svelte-fl9zvv">corta</a>
+    <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START --><rect width="18" height="2" x="3" y="11" fill="currentColor" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" fill="currentColor" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" fill="currentColor" rx=".95" ry=".95"/><!-- HTML_TAG_END --></svg></button>
+    </div></header></div> 
+<div class="section" id="section-a694e9aa"><header class="section-container svelte-5xb75x"><span class="superhead svelte-5xb75x">23/09/2024</span>
+  <h1 class="heading svelte-5xb75x">The Nature of God and the Universe: Creation by Design or Coincidence?</h1>
+  <img src="https://vnshpzknqmdfibnnthhl.supabase.co/storage/v1/object/public/images/ddd82512-b988-42e7-865a-02d05bb753f4/1727104095097download(5).jpg" alt="" class="svelte-5xb75x"></header></div> 
+<div class="section" id="section-11bda014"><div class="section"><div class="section-container content svelte-1lugy4n"><!-- HTML_TAG_START --><h2 id="thenatureofgodandtheuniversecreationbydesignorcoincidence">The Nature of God and the Universe: Creation by Design or Coincidence?</h2>
+<p>A pivotal debate in both religious and scientific circles revolves around whether the universe and life within it are products of chance or deliberate design. Islamic belief categorically revolves around the concept of <em>Tawhid</em>, the belief in the absolute oneness and uniqueness of God (<em>Allah</em>) and rejects coincidence, advocating that the universe is a purposeful creation by God. This conviction is deeply grounded in the Quran, which describes the intricacies of the universe and living creatures as signs that point to a divine Creator.</p>
+<h3 id="thenatureofgodintheislamicperspective">The Nature of God in the Islamic Perspective</h3>
+<p>The Quran and traditional Islamic scholarship emphasize that the intricate design of creation—spanning the vast expanse of the cosmos to the smallest insect—points to deliberate creation by a Creator, not random coincidence. From this viewpoint, the universe and its detailed workings are seen as signs (<em>ayat</em>) of God’s wisdom, knowledge, and power. Central to Islamic theology is the belief in God’s transcendence and incomparability, as expounded in key theological texts such as the 
+<a href=https://www.abuaminaelias.com/aqeedah-tahawiyyah target=_blank> <strong>Tahawi Creed</strong> </a> (<em>Aqidah al-Tahawiyyah</em>). This creed forms the cornerstone of Sunni Islamic belief, outlining core concepts of God, prophecy, and the unseen world.</p>
+<p>In Islamic thought, God is eternal, without beginning or end, omnipotent, omniscient, and completely independent of His creation. His attributes—such as mercy, justice, and wisdom—are affirmed without delving into their specifics, recognizing the inherent limitations of human comprehension. This humility is central to Islamic theology, emphasizing trust in God's wisdom without questioning or comparing divine actions to human standards.</p>
+<p>The <em>Tahawi Creed</em> stresses that God's actions are inherently just and wise, even when beyond human understanding. As God transcends time and space, He operates beyond the physical and temporal limitations that constrain human cognition. In essence, the creed teaches that attempting to fully grasp God’s essence is futile, for His reality surpasses human comprehension.</p>
+<h3 id="thecomplexityofasingleinsectachallengetorandomcreation">The Complexity of a Single Insect: A Challenge to Random Creation</h3>
+<p>To illustrate the concept of design versus coincidence, consider the development of a single insect, such as a bee or a butterfly. The biological complexity of such a small creature is extraordinary. Each insect possesses intricate systems for digestion, reproduction, navigation, and communication. For example, bees use the "waggle dance" to communicate the location of food sources to other members of their hive. This sophisticated behavior requires a highly specialized nervous system, raising the question of whether random mutations and natural selection alone could account for such complex behavior in the time available.</p>
+<p>If we had waited for the first generation of bees to communicate with their own kind about the location of food, for example, there would not be an insect called the bee today, because it would have become extinct after failing in the first attempts at communication based on the principle of trial and error.</p>
+<p>From a scientific perspective, the evolution of such an intricate organism through random processes would require an immense amount of time—likely far beyond the estimated age of the Earth, which is <a href=https://education.nationalgeographic.org/resource/resource-library-age-earth target=_blank> <strong>4.54 billion years</strong> </a> . The first life forms are believed to have emerged around <strong>3.5 billion years ago</strong> . However, the timeline for the evolution of complex organisms, such as insects, is much shorter. Primitive insects are thought to have appeared approximately
+<a href=https://www.nationalgeographic.com/science/article/insects-evolution target=_blank> <strong>400 million years ago</strong> </a> . Given the complexity of insect systems, the random trial-and-error process of evolution raises questions about whether chance alone can explain their existence.</p>
+<p>The probability of evolving something as intricate as an insect through random processes is statistically unlikely within the available timeframe. For such complexity to arise by coincidence would require an astronomical number of precise mutations, all working together to create harmonious systems.</p>
+<h3 id="thescaleofcreationmillionsofworlds">The Scale of Creation: Millions of Worlds</h3>
+<p>The Quran refers to the existence of multiple "worlds" (<em>alameen</em>), suggesting that God’s creation extends beyond Earth. Modern cosmology echoes this idea, proposing that the universe contains potentially 
+<a href=https://science.nasa.gov/missions/hubble/hubble-reveals-observable-universe-contains-10-times-more-galaxies-than-previously-thought/ target=_blank> <strong>200 billion galaxies</strong></a>, each possibly harboring planets that could support life . If life exists on other planets, the odds that complex creatures could evolve through random processes on multiple planets becomes increasingly implausible.</p>
+<p>From an Islamic perspective, if God designed these worlds with intention and precision, the existence of life across billions of planets reinforces the concept of divine design. The Quran encourages believers to reflect on creation as a sign of God’s power and wisdom, further challenging the idea that the universe is a product of coincidence.</p>
+<h3 id="thehumanbrainaquestionofuntappedpotential">The Human Brain: A Question of Untapped Potential</h3>
+<p>Another profound example of complexity is the human brain. Though the myth that humans only use 10% of their brain has been debunked, the brain's full potential is not yet fully understood. From an Islamic perspective, this untapped capacity aligns with the concept of human life as a test. Humans are given cognitive limitations as part of God's divine wisdom. If humans could fully utilize their mental abilities, faith might not be necessary, and life's trials would lose their meaning.</p>
+<p>These limitations remind humanity of the vast difference between human knowledge and divine knowledge. God, described in the Quran as all-knowing, understands the past, present, and future as well as every potential outcome.</p>
+<h3 id="divineknowledgeandhumanfreewill">Divine Knowledge and Human Free Will</h3>
+<p>One of the most complex theological concepts in Islam is the relationship between God's omniscience and human free will. The Quran teaches that God’s knowledge encompasses everything: past, present, and future. He knows all possible outcomes, which are recorded in the <em>Preserved Tablet</em> (<em>al-Lawh al-Mahfuz</em>). However, this divine knowledge does not negate human free will. While God knows all possible choices, it is up to individuals to make the decisions that shape their lives.</p>
+<p>Islamic scholars often use the metaphor of a branching tree to explain this relationship. Every choice a person makes leads to a different branch, and God knows all of the branches. But the actual path is determined by human choices. This metaphor illustrates a delicate balance between divine omniscience and human accountability. God’s vast knowledge does not limit human freedom, but rather exists alongside it.</p>
+<h3 id="thelimitsofhumanunderstandinghumilitybeforedivinewisdom">The Limits of Human Understanding: Humility Before Divine Wisdom</h3>
+<p>Humans often struggle to comprehend God’s wisdom, especially in moments of hardship. The Quran describes humans as being hasty and impatient, rushing to judgment without fully understanding the broader context. This impatience leads to frustration when things do not go as expected. From an Islamic perspective, this frustration stems from arrogance—applying human standards of justice to divine actions.</p>
+<p>God’s wisdom, as emphasized in the <em>Tahawi Creed</em>, transcends human understanding. His plan is vast, spanning across time and space, and considers long-term outcomes that humans cannot perceive. Muslims are encouraged to trust in God’s wisdom, even when it is not immediately clear, and to approach life with humility, acknowledging their limited perspective.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>In Islamic theology, God is understood as the omnipotent Creator, whose infinite wisdom, knowledge, and power are beyond human comprehension. The <em>Tahawi Creed</em> affirms the importance of accepting divine attributes without delving into their specifics. The universe, from the vast galaxies to the smallest insect, points to a deliberate and purposeful Creator.</p>
+<p>The complexity of life on Earth, particularly the existence of highly specialized creatures like insects, challenges the idea of random creation. Moreover, the likelihood that life across millions of planets could arise through random processes is mathematically improbable. Both science and Islamic theology point to the necessity of an intelligent designer behind the universe's creation.</p>
+<p>Finally, the limits of human understanding remind believers of the need for humility before divine wisdom. Faith, in the Islamic tradition, involves trusting in God’s plan, even when it is beyond human comprehension. The universe, in its vastness and intricacy, serves as a reminder of God's deliberate and purposeful creation.</p><!-- HTML_TAG_END --></div></div></div> 
+<div class="section" id="section-3ca6f59a"><footer><div class="section-container svelte-1excgdw"><hr class="svelte-1excgdw">
+    <div class="footer svelte-1excgdw"><span class="copyright svelte-1excgdw">Copyright 2024</span>
+      <span class="primo svelte-1excgdw"><a href="https://primo.so" class="svelte-1excgdw">Primo</a> Powered </span>
+      <ul class="svelte-1excgdw"><li><a href="https://x.com" aria-label="mdi:X" class="svelte-1excgdw"></a>
+        </li><li><a href="https://pinterest.com" aria-label="mdi:pinterest" class="svelte-1excgdw"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M9.04 21.54c.96.29 1.93.46 2.96.46a10 10 0 0 0 10-10A10 10 0 0 0 12 2A10 10 0 0 0 2 12c0 4.25 2.67 7.9 6.44 9.34c-.09-.78-.18-2.07 0-2.96l1.15-4.94s-.29-.58-.29-1.5c0-1.38.86-2.41 1.84-2.41c.86 0 1.26.63 1.26 1.44c0 .86-.57 2.09-.86 3.27c-.17.98.52 1.84 1.52 1.84c1.78 0 3.16-1.9 3.16-4.58c0-2.4-1.72-4.04-4.19-4.04c-2.82 0-4.48 2.1-4.48 4.31c0 .86.28 1.73.74 2.3c.09.06.09.14.06.29l-.29 1.09c0 .17-.11.23-.28.11c-1.28-.56-2.02-2.38-2.02-3.85c0-3.16 2.24-6.03 6.56-6.03c3.44 0 6.12 2.47 6.12 5.75c0 3.44-2.13 6.2-5.18 6.2c-.97 0-1.92-.52-2.26-1.13l-.67 2.37c-.23.86-.86 2.01-1.29 2.7z"/><!-- HTML_TAG_END --></svg></a>
+        </li></ul></div></div></footer></div> 
+
+      <script type="module">
+      import('/_symbols/d8831946-4b11-474b-aa64-17f719ce2577.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-1a1b7ee4'),
+              hydrate: true,
+              props: {"logo":{"image":{"alt":"","src":"","url":"","size":null},"title":"corta"},"site_nav":[{"link":{"url":"/","label":"Home"}},{"link":{"url":"/blog","label":"Blog"}},{"link":{"url":"/about","label":"About"}},{"link":{"url":"","label":""}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/a125ab0e-1776-4c28-ac41-6272339f2891.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-3ca6f59a'),
+              hydrate: true,
+              props: {"heading":"","email":"","social_links":[{"icon":"mdi:X","link":{"url":"https://x.com","label":"X","active":false}},{"icon":"mdi:pinterest","link":{"url":"https://pinterest.com","label":"Pinterest","active":false}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    </script>
+    </body>
+  </html>
+  
