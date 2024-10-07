@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "**/*",
-      "use": "@vercel/static"
-    }
-  ],
+  "github": {
+    "silent": true,
+    "autoAlias": true,
+    "enabled": true,
+    "ignoreBuildStep": true,
+    "ignoreCommand": "git diff --quiet HEAD^ HEAD ./ ':(exclude)robots.txt' ':(exclude)sitemap.xml'"
+  }
   "routes": [
     {
       "src": "/sitemap.xml",
