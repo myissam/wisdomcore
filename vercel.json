@@ -1,20 +1,19 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "**",
+      "use": "@vercel/static"
+    }
+  ],
   "routes": [
     {
       "src": "/sitemap.xml",
-      "headers": { "Content-Type": "application/xml" }
+      "dest": "/sitemap.xml"
     },
     {
-      "src": "/(.*)",
-      "dest": "/$1/index.html"
+      "src": "/robots.txt",
+      "dest": "/robots.txt"
     }
-  ],
-  "github": {
-    "silent": true,
-    "autoAlias": true,
-    "enabled": true,
-    "ignoreBuildStep": true,
-    "ignoreCommand": "git diff --quiet HEAD^ HEAD ./ ':(exclude)robots.txt' ':(exclude)sitemap.xml'"
-  }
+  ]
 }
