@@ -1,0 +1,22 @@
+{
+  "name": "wisdomcore",
+  "version": "1.0.0",
+  "engines": {
+    "node": "18.20.4"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build && node sitemap.js && cp sitemap.xml robots.txt build/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^0.0.17",
+    "@sveltejs/kit": "^0.0.30",
+    "svelte": "^4.2.19",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.1.2"
+  }
+}
